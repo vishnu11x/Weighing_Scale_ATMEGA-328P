@@ -7,7 +7,7 @@
 
  //-----------------------------------------------------------------------------
 #define F_CPU 16000000UL
-// Frequency of Microcintroller Ocsillators
+// Frequency of Microcontroller Oscillators
 
 #include <avr/io.h>
 #include <util/delay.h>  // To set delay

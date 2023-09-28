@@ -6,14 +6,17 @@
 ///  */
 
  //-----------------------------------------------------------------------------
-#define F_CPU 16000000 // Frequency of Microcintroller Ocsillators
+#define F_CPU 16000000UL
+// Frequency of Microcintroller Ocsillators
 
 #include <avr/io.h>
 #include <util/delay.h>  // To set delay
 #include <stdio.h>  // To use " sprintf "
 
-#define HX_DT PD2  // Define Port D2 as HX_DT (o/p of HX711)
-#define HX_SCK PD3  // Define Port D3 as HX_SCK (clock of HX711)
+#define HX_DT PD2
+// Define Port D2 as HX_DT (o/p of HX711)
+#define HX_SCK PD3
+// Define Port D3 as HX_SCK (clock of HX711)
 //------------------------------------------------------------------------------
 
 float weight;  // To store weight in grams                     

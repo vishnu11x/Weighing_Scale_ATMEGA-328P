@@ -1,7 +1,7 @@
 /////*
 ///  * File:   cal.c
 ///  * Author: VISHNU C S
-///  * Program to measure weight using Atmega-328p and HX711 Load cell amplifier
+///  * Program to calculate scale factor of load cell using Atmega-328p and HX711 Load cell amplifier
 ///  * Created on 25 September, 2023, 7:11 PM
 ///  */
 

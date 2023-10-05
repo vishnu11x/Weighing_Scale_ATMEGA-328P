@@ -44,6 +44,8 @@ void LCD_wstr(const char *str);  // To write string to a LCD
 // Main Function
 int main(void)
 {
+    DDRD &= ~(1 << HX_DT);  // Set Port D2 as input (HX711 data line)
+    DDRD |= (1 << HX_SCK);  // Set Port D3 as output (HX711 clock line)
     HX_INIT();  // Initialize HX711
     I2C_init();  // Initialize I2C communication
     LCD_init();  // Initialize LCD
@@ -102,8 +104,6 @@ unsigned long Readcount(void)
 // Function to initialize HX711
 void HX_INIT()
 {
-    DDRD &= ~(1 << HX_DT);  // Set Port D2 as input (HX711 data line)
-    DDRD |= (1 << HX_SCK);  // Set Port D3 as output (HX711 clock line)
     PORTD &= ~(1 << HX_SCK); // Set HX711 clock line to low(Normal Working Mode)
     _delay_ms(100);
     

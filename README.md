@@ -1,5 +1,5 @@
 # Weighing_Scale_ATMEGA-328P
-* This includes C program and ".hex" to measure the weight and to find the Calibration scale factor of the Load cell.
+* This includes Registry-level C program and ".hex" to measure the weight and to find the Calibration scale factor of the Load cell.
 * This program's are written for ATMEGA-328P MICROCONTROLLER using MPLAB X IDE
 
 # CAL.X

@@ -22,7 +22,7 @@
 float weight;  // To store weight in grams                     
 long tare;  // To store tare/offset value
 long read_data;  // To store data read from HX711
-const float cal_val = -460.604; // Scale factor of Load cell
+const float cal_val = -453.339; // Scale factor of Load cell
 char W[5];  // To store converted weight in char type (For printing in LCD)
 int LCD_Address = 0x27;  // I2C slave address
 

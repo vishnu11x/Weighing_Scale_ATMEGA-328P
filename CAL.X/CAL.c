@@ -24,7 +24,7 @@ long tare;  // To store tare
 long temp; // To store temp. values
 float temp_cal;  // To store temp. scale factor
 float avg_cal; // To store average scale factor
-int ref_w = 167; // Known Weight using for calibration in grams(g) 
+int ref_w = 299; // Known Weight using for calibration in grams(g) 
 char out[8];  // To store avg_cal in char type (For printing in LCD)
 
 // Function declaration
@@ -268,7 +268,7 @@ float cal()
   tare/=100; // avg of tare
   
   LCD_cmd(0x01);
-  LCD_wstr("Place 167g");
+  LCD_wstr("Place 299g");
   _delay_ms(5000);
   LCD_cmd(0x01);
   LCD_wstr("     ------     ");
